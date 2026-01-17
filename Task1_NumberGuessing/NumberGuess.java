@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Class for generating a random number in a range
+
 class RangeGenerator {
     public int generate(int min, int max) {
         return (int) (Math.random() * (max - min + 1)) + min;
@@ -13,7 +13,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         RangeGenerator rg = new RangeGenerator();
 
-        System.out.println("==== NUMBER GUESSING GAME ====");
+        System.out.println(" NUMBER GUESSING GAME ");
 
         while (true) {
 
