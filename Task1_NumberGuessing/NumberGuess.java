@@ -35,7 +35,7 @@ public class Main {
                 attempts++;
 
                 if (guess == randomNumber) {
-                    System.out.println("\n🎉 Correct! You guessed the number in " + attempts + " attempts.");
+                    System.out.println("\n Correct! You guessed the number in " + attempts + " attempts.");
                     break;
                 } else if (guess < randomNumber) {
                     System.out.println("Too low! Try again.");
@@ -43,8 +43,6 @@ public class Main {
                     System.out.println("Too high! Try again.");
                 }
             }
-
-            // Ask to play again
             System.out.print("\nDo you want to play again? (yes/no): ");
             String choice = sc.next().toLowerCase();
 
