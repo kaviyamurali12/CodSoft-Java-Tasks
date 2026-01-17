@@ -5,7 +5,7 @@ public class StudentGradeCalculator {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("\n------- Welcome to \"Student Grade Calculator\" -------");  
+        System.out.println(" Welcome to \"Student Grade Calculator\" ");  
 
         int totalMarks = 0;
         float avgPercentage;
@@ -24,7 +24,7 @@ public class StudentGradeCalculator {
 
             if(marks < 0 || marks > 100) {
                 System.out.println("\nInvalid Input! Please enter correct marks.");
-                i--;    // Ask for the current subject again
+                i--;    
                 continue;
             }
             totalMarks += marks;
@@ -35,7 +35,7 @@ public class StudentGradeCalculator {
         avgPercentage = (float) totalMarks / subjects;
         System.out.println("Average Percentage: " + avgPercentage + "%");
 
-        // Assign Grade 
+        
         if(avgPercentage >= 90) {
             System.out.println("Grade A");
         } else if(avgPercentage >= 80) {
